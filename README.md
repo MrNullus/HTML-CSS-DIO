@@ -1,2 +1,2 @@
-# Projeto HTML e CSS-DIO
-Projeto feito em HTML e CSS no bootcamp da DIO :)
+# Projeto HTML5 e CSS3 da DIO
+Projeto feito em HTML5 e CSS3 no bootcamp da DIO :)
