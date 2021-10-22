@@ -4,24 +4,40 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Alvaro Borges</title>
-
-        <!--  Arquives CSS  -->
+        <!-- css link file -->
         <link rel="stylesheet" href="./css/style.css">
+
+        <title>Alvaro Borges</title>
     </head>
     <body>
         <div class="container-post">
-            <header> <!--  Header  -->
+            <header class="header-main"> <!--  header starts -->
                 <img class="photo" src="img/perfil.jpg" alt="Foto do meu perfil"/>
                 <h1 id="title">Alvaro Borges</h1>
-            </header>  <!--  Fim Header  -->
+                <nav class="navbar">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Posts</a>
+                        </li>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Forum</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>  <!-- end of header -->
     
-            <section>  <!--  Section  -->
+            <section>  <!--  section  -->
                 <header>
                     <h2 class="subtitle">Posts</h2>
                 </header>
     
-                <article class="post">
+                <article class="post"> <!-- post starts -->
                     <header>
                         <h3 class="post_title">Post #1</h3>
                         <img src="img/Marca.png" alt="Imagem do Post" class="post_image">
@@ -45,22 +61,23 @@
                     <p class="post-content">
                         Lorem ipsum dolor sit, quisquam velit obcaecati inventore magnam sint temporibus tempore, atque odio tempora possimus, illo illum blanditiis. Ipsa similique nemo eos sapiente unde. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea rerum rem esse! Ipsa placeat delectus nobis tempora magnam maxime? Natus perferendis quisquam dignissimos laudantium, distinctio ex minima modi nam vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque aspernatur, asperiores, consectetur, explicabo illo placeat exercitationem dolores ipsam esse alias voluptatem maxime possimus consequuntur doloremque tenetur fugit excepturi sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, qui excepturi velit eligendi nam impedit vitae nihil, officiis distinctio neque incidunt quibusdam nulla ipsum fuga accusantium minima accusamus eum voluptas?
                     </p>
-                </article>
-            </section>  <!--  Fim Section  -->
-    
-            <footer>    <!--    Footer   -->
+                </article> <!-- end of post -->
+            </section>  <!--  end of section  -->
+
+            <footer>    <!-- footer starts -->
+                <!-- contact list starts -->
                 <ul class="contacts-list">
                     <li>
-                        <a href="mailto:gestor.alvaro@gmail.com">gestor.alvaro@gmail.com</a>
+                        <a class="btn" href="mailto:gestor.alvaro@gmail.com">gestor.alvaro@gmail.com</a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com" target="_blank" >linkedin</a>
+                        <a class="btn" href="https://www.linkedin.com" target="_blank" >linkedin</a>
                     </li>
                     <li>
-                        <a href="https://github.com/dev-gustavo-henrique" target="_blank">Github</a>
+                        <a class="btn" href="https://github.com/dev-gustavo-henrique" target="_blank">Github</a>
                     </li>
-                </ul>
-            </footer>     <!--  Fim  Footer  -->
+                </ul> <!-- end of contact lis -->
+            </footer>     <!-- end of footer -->
         </div>
     </body>
 </html>
