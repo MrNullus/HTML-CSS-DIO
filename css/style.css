@@ -1,5 +1,8 @@
-/*   Reset  Browser   */
-
+/*
+==============
+    Globals
+==============
+*/
 *{
     margin: 0;
     padding: 0;
@@ -9,33 +12,83 @@
     text-decoration: none;
 }
 
-/*      Interface      */
 body{
-    background: grey;
+    background: #262626;
     font-family: Verdana;
-    margin: auto;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; min-width: 100vh;
 }
 
 .container-post{
     background-color: rgba(14, 10, 10, 0.555);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-header{
-    margin: 0;
-    text-align: center;
+/*
+==============
+   Header
+==============
+*/
+.header-main{
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background: #dd7616da;
+    padding: 2em;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar ul li a{
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    transition: all 0.3s linear;
+}
+.navbar ul li a:hover{
+    font-weight: 400;
+    color: #fff;
+    text-decoration: underline;
+}
+
+/*
+===========
+  Section
+===========
+*/
 section{
-    max-width: 60%;
-    padding: 2rem;
-    margin: 0 auto;
+    min-width: 100vh;
+    padding: 5em;
 }
 
 /*  Photo Perfil   */
 .photo{
     border: 5px solid #505050;
     border-radius: 50%;
-    max-width: 19rem;
+    width: 10em;
     margin: 2rem;
 }
 
@@ -50,18 +103,22 @@ section{
 }
 
 .subtitle{
-    font-size: 2em;
+    font-size: 3em;
     font-style: italic;
     font-weight: bolder;
     font-family: 'Courier New', monospace;
-    margin-bottom: 1rem;
+    margin-bottom: 1.4em;
 }
 
 a{
     color: #9e8d8d;
 }
 
-/*    Post    */
+/*
+==============
+    Post
+==============
+*/
 .post{
     background: #fff;
     padding: 15px;
@@ -91,27 +148,41 @@ a{
     width: 100%;
 }
 
+
+/*
+==============
+   Footer
+==============
+*/
 footer{
-    width: 100%;   
-    padding: 4em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dd7616da;
 }
 
-/*   Contacts Lists   */
+/*
+================
+  Contact List
+================
+*/
 .contacts-list{
     list-style-type: none;
-    padding-left: 15px;
+    display: flex;        
 }
 
 ul.contacts-list li{
-    display: inline;
-    margin: auto 0;
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
 }
 
 ul.contacts-list li a{
+    background: #333;
     color: #fff;
     margin: 2rem;
-    border: 3px solid #505050;
     padding: 24px;
-    background-color: black;
+    border: 2px solid #262626;
     border-radius: 5px;
 }
